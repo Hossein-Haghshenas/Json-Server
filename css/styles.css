@@ -51,8 +51,12 @@ textarea {
   margin: 0;
 }
 .post p {
-  margin-top: 0;
+  margin-top: 2rem;
+}
+.post p:nth-of-type(1) {
+  margin: 0.3rem 0 !important;
 }
 .post a {
-  color: aqua;
+  color: rgb(94, 94, 94);
+  text-decoration: none;
 }

@@ -18,9 +18,9 @@ const displayData = (data) => {
     const like = document.createElement("p");
     like.textContent = `${items.likes} likes`;
     const article = document.createElement("p");
-    article.textContent = items.body;
+    article.textContent = items.body.slice(0, 190);
     const details = document.createElement("a");
-    details.href = "./details.html";
+    details.href = `./details.html?id=${items.id}`;
     details.textContent = "Read more ...";
     container.append(title, like, article, details);
 
