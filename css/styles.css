@@ -38,3 +38,21 @@ textarea {
 textarea {
   min-height: 200px;
 }
+
+/* posts style */
+
+.post {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin: 20px 0;
+}
+.post h2 {
+  margin: 0;
+}
+.post p {
+  margin-top: 0;
+}
+.post a {
+  color: aqua;
+}
