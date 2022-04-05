@@ -1,0 +1,23 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "description": "simple project for learn json server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hossein-Haghshenas/Json-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hossein-Haghshenas/Json-Server/issues"
+  },
+  "homepage": "https://github.com/Hossein-Haghshenas/Json-Server#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
