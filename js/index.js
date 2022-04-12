@@ -1,7 +1,9 @@
 // javascript for index.html
 
 const renderPosts = async () => {
-  const url = "http://localhost:3000/posts";
+  // sort with _sort=likes _order=desc queries
+
+  const url = "http://localhost:3000/posts?_sort=likes&_order=desc";
 
   const res = await fetch(url);
   const data = await res.json();
