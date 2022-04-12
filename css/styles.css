@@ -60,3 +60,13 @@ textarea {
   color: rgb(94, 94, 94);
   text-decoration: none;
 }
+
+.button {
+  color: white;
+  background: #5736cc;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
