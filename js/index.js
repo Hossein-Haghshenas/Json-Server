@@ -1,15 +1,21 @@
 // javascript for index.html
 
-const renderPosts = async () => {
+const searchForm = document.querySelector(".search");
+
+const renderPosts = async (term) => {
   // sort with _sort=likes _order=desc queries
 
-  const url = "http://localhost:3000/posts?_sort=likes&_order=desc";
+  let url = "http://localhost:3000/posts?_sort=likes&_order=desc";
+
+  if (term) {
+    url += `&q=${term}`;
+  }
 
   const res = await fetch(url);
   const data = await res.json();
+
   displayData(data);
 };
-renderPosts();
 
 const displayData = (data) => {
   for (const items of data) {
@@ -29,3 +35,14 @@ const displayData = (data) => {
     document.querySelector(".blogs").appendChild(container);
   }
 };
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const posts = document.querySelector(".blogs").children;
+  for (const item of posts) {
+    item.remove();
+  }
+  renderPosts(searchForm.term.value.trim());
+});
+
+renderPosts();
